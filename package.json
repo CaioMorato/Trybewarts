@@ -1,0 +1,29 @@
+{
+  "name": "trybewarts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "tw:build": "tailwindcss build ./src/styles/tailwind.css -o ./public/styles/tailwind.css ",
+    "tw:watch": "onchange 'tailwind.config.js' tailwindcss build 'src/**/*.css' -- npm run tw:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaioMorato/Trybewarts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaioMorato/Trybewarts/issues"
+  },
+  "homepage": "https://github.com/CaioMorato/Trybewarts#readme",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.7",
+    "onchange": "^7.1.0",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  }
+}
